@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dimsum</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive, Verdana, Geneva, Tahoma, sans-serif;;
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+    }
+    .buttonbar {
+      text-align: left;
+    }
+    .topest.menu {
+      background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border-bottom: 4px solid #ff9800;
+      border-radius: 24px;
+
+    }
+
+    .top.menu {
+      background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+      color: #fff;
+      height: 100px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border-bottom: 4px solid #ff9800;
+      border-radius: 0 0 24px 24px;
+      border-top: 4px solid #ff9800;
+
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2rem;
+      color: #8b5e3c;
+    }
+
+    .menu-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-card {
+      background: #fff;
+      border: 2px solid #f0d5a3;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-img {
+      width: 100%;
+      height: 180px;
+      background: #ccc url('placeholder.jpg') center/cover no-repeat;
+    }
+
+    .menu-content {
+      padding: 15px;
+    }
+
+    .menu-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #b36b00;
+    }
+
+    .menu-details {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .menu-price {
+      font-size: 1.1rem;
+      color: #222;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="topest menu">
+    <div class="buttonbar">
+  <button onclick="window.location.href='Mommy Nels.html'" style="margin: 20px; padding: 10px 20px; font-size: 1rem; background-color: #ff9800; color: white; border: none; border-radius: 5px; cursor: pointer;">Back to Menu</button>
+  </div>
+  <h1>Mommy Nels Dimsum</h1>
+</div>
+  <br>
+  <br>
+  <div class="top menu"><h2>DIMSUM</h2></div>
+  <div class="menu-section">
+    <div class="menu-card">
+      <div class="menu-img" style="background-image: url('siomai.jpg');"></div>
+      <div class="menu-content">
+        <div class="menu-title">Homemade Siomai</div>
+        <div class="menu-details">12–24 pcs</div>
+        <div class="menu-price">₱150-₱255</div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img" style="background-image: url('siomaiwithchili.jpg');"></div>
+      <div class="menu-content">
+        <div class="menu-title">Homemade Siomai w/ chili Garlic</div>
+        <div class="menu-details">50 pcs</div>
+        <div class="menu-price">₱595</div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-img" style="background-image: url('chiligarlic2.jpg');"></div>
+      <div class="menu-content">
+        <div class="menu-title">Chili Garlic</div>
+        <div class="menu-details">240ml</div>
+        <div class="menu-price">₱170</div>
+      </div>
+    </div>
+</body>
+</html>

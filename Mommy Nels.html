@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mommy Nels</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+
+    .topbar {
+      background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+      color: #fff;
+      left: 0;
+      right: 0;
+      top: 0;
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive, Verdana, Geneva, Tahoma, sans-serif;
+      position: fixed;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 30px 0 20px 0;
+      border-bottom: 4px solid #ff9800;
+      border-radius: 0 0 24px 24px;
+      z-index: 1000;
+    }
+
+    .topbar h1 {
+      font-size: 2.5rem;
+      letter-spacing: 4px;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .navbar {
+      background: #ff9800;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 100px; 
+      width: 100%;
+      z-index: 999;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive, Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .clickimages {
+      display: flex;
+      width: 100%;
+      height: 400px;
+      margin-top: 170px;
+    }
+    .clickimages a {
+      flex: 1;
+      display: block;
+    }
+
+    .slice {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.01);
+      transition: transform 0.3s ease, filter 0.3s ease;
+      position: relative;
+    }
+    .slice:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+    .slice::after {
+        content: attr(data-label); 
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+    }
+    .slice:hover::after {
+        opacity: 1;
+    }
+
+    .left {
+      clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+    }
+
+    .middle {
+      clip-path: polygon(14% 0, 100% 0, 86% 100%, 0% 100%);
+    }
+
+    .right {
+      clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .contents {
+      background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+      width: 40vw;
+      height: 106vh;
+      position: absolute;
+      left: 40vw;
+      bottom:auto;
+      transform: translate(10vw, 5vh);
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive, Verdana, Geneva, Tahoma, sans-serif;
+      padding: 10px;
+      color: #333;
+    }
+    .contentsimage {
+      height: 250px;
+  margin-top: 200px; /* adjust this value to move it lower */
+  display: block;
+  margin-left: 250px;
+  margin-right: auto;
+      }
+
+      .contentsimage img {
+        height: 500px;
+        width: 500px;
+        
+    }
+    .aboutus {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <h1>MOMMY <br> NELS</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+  </div>
+
+  <div class="clickimages">
+    <a href="Pastries.html" class="slice left" style="background-image: url('cookies.jpg');" data-label="Pastries">
+    <div class="slice left" style="background-image: url('cookies.jpg');" data-label="Pastries"></div>
+    </a>
+    <a href="Entree.html" class="slice middle" style="background-image: url('entree.jpg');" data-label="Entree">
+    <div class="slice middle" style="background-image: url('entree.jpg');" data-label="Entree"></div>
+    </a>
+    <a href="Dimsum.html" class="slice right" style="background-image: url('dimsum.jpg');" data-label="Dimsum">
+    <div class="slice right" style="background-image: url('dimsum.jpg');" data-label="Dimsum"></div>
+    </a>
+  </div>
+
+  
+  <div class="contents" id="about">
+    <h3>About Us</h3>
+    
+      <p>Mommy Nels is a family-owned business started back in 2018. Founded by Mrs. Lava, Nelie, our humble beginnings were rooted in a passion for sharing delicious homemade food with our local community. Over the years, we have grown from a small kitchen operation into a beloved neighborhood favorite, serving a wide variety of pastries, hearty entrees, and authentic homemade dimsum.
+        <br><br>
+        At Mommy Nels, we believe in using only the freshest ingredients and traditional recipes passed down through generations. Every dish is prepared with love and care, ensuring that each bite brings comfort and joy to our customers.
+        <br><br>
+        In addition to our regular menu, we also offer convenient delivery services and catering for special occasions, family gatherings, and corporate events. Our commitment to quality and customer satisfaction has helped us build lasting relationships with our patrons.
+        <br><br>
+        Whether you are craving a sweet treat, a savory meal, or something in between, Mommy Nels is here to serve you with a smile. Thank you for supporting our family business and allowing us to be a part of your celebrations and everyday moments.
+      </p>
+  </div>
+  
+  <div class="contentsimage">
+    <img src="about us.jpg">
+  </div>
+</body>
+
+</html>
+
